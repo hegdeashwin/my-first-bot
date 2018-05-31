@@ -1,0 +1,34 @@
+{
+  "name": "my-first-bot",
+  "version": "1.0.0",
+  "description": "My first bot & i love it",
+  "author": "Ashwin Hegde <ashwin.hegde3@gmail.com>",
+  "license": "MIT",
+  "repository": "https://github.com/hegdeashwin/my-first-bot.git",
+  "scripts": {
+    "dev": "nodemon --exec \"npm start\"",
+    "start": "probot run ./index.js",
+    "lint": "standard --fix",
+    "test": "jest && standard",
+    "test:watch": "jest --watch --notify --notifyMode=change --coverage",
+    "deploy": "now"
+  },
+  "dependencies": {
+    "probot": "^6.0.0"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3",
+    "nodemon": "^1.17.2",
+    "now": "^11.1.16",
+    "smee-client": "^1.0.1",
+    "standard": "^10.0.3"
+  },
+  "engines": {
+    "node": ">= 8.11.2"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  }
+}
